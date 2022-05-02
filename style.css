@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+:root {
+  --bgh1: hsl(300, 43%, 22%);
+  --verified: hsl(333, 80%, 67%);
+  --headingparagraph: hsl(303, 10%, 53%);
+  --parargraphs: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+  --font: "League Spartan", sans-serif;
+}
+/* ==========global and body bg for mobile===== */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* =========top image========= */
+.bg1 {
+  background-image: url(../social-proof-section-master/images/bg-pattern-top-mobile.svg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+/* =========bg2 bottom right======== */
+.bg2 {
+  background-image: url(../social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+  width: 100%;
+  height: 90%;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: bottom right;
+}
+
+h1 {
+  font-family: var(--font);
+  color: var(--bgh1);
+  font-size: 3.4em;
+
+  font-weight: 700;
+}
+.rating p {
+  font-family: var(--font);
+  font-size: 1.3em;
+  font-weight: 500;
+  color: var(--bgh1);
+}
+
+p {
+  font-family: var(--font);
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+/* ============end of global====================== */
+/* =========start with header======= */
+.container {
+  margin-top: 40px;
+  max-width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+/* =========header paragraph====== */
+
+.header p {
+  color: var(--headingparagraph);
+  font-size: 1.2em;
+  margin-top: 1rem;
+}
+/* =============the rating===================== */
+.stars {
+  background: var(--parargraphs);
+  margin-top: 10px;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+/* =================card adjustement for mobile=========== */
+.card {
+  margin-top: 20px;
+  background: var(--bgh1);
+  padding: 20px;
+  border-radius: 5px;
+}
+.card p {
+  color: var(--parargraphs);
+}
+/* ===================== profile and writing inside the card styling======*/
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+/* ======aliginging start the name and verification and setting colors======  */
+.name {
+  color: var(--White);
+  text-align: start;
+}
+.profile .verified {
+  color: var(--verified);
+}
+/* ==========adjusting image width to an approx fixed width  */
+.profile img {
+  width: 50px;
+  border-radius: 50%;
+}
+.paragraph {
+  padding-top: 20px;
+  line-height: 1.1rem;
+  text-align: start;
+}
+.card3 {
+  margin-bottom: 20px;
+}
