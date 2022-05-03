@@ -115,6 +115,7 @@ p {
   width: 50px;
   border-radius: 50%;
 }
+/* ==========setting paragraph paddings and also last card margin from bottom could do it in container as margin bottom and top above */
 .paragraph {
   padding-top: 20px;
   line-height: 1.1rem;
@@ -122,4 +123,91 @@ p {
 }
 .card3 {
   margin-bottom: 20px;
+}
+/* ===========done with mobile adjustement now time for responsive 800px+=== */
+@media (min-width: 800px) {
+  /* =========top image========= */
+  .bg1 {
+    background-image: url(../social-proof-section-master/images/bg-pattern-top-desktop.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+  .bg2 {
+    background-image: url(../social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: bottom right;
+  }
+  .container {
+    margin-top: 10%;
+    min-width: 80%;
+  }
+  /* =====main top for flex and adjusting width */
+  .maintop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  /* ======adjsuting header width */
+  .header {
+    width: 300px;
+    margin-left: 50px;
+  }
+  /* ====display flex for stars icon */
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+
+    margin-right: 50px;
+  }
+  .stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1em 2em;
+    font-weight: 500;
+    width: 25vw;
+  }
+  /* ===now setting each star to it own paddind */
+  .stars1 {
+    margin-right: 80px;
+  }
+  .stars2 {
+    margin-right: 40px;
+  }
+  /* =========adjusting card======== */
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    width: 300px;
+  }
+  .card1 {
+    margin-left: 50px;
+    margin-bottom: 80px;
+  }
+  .card3 {
+    margin-top: 80px;
+    margin-right: 50px;
+  }
 }
